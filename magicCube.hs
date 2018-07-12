@@ -1,0 +1,1 @@
+magicCube = [ (a,b,c,d,e,f,g,h,i) | a <- [1..9], b <- [1..9], c <- [1..9], d <- [1..9], e <- [1..9], f <- [1..9], g <- [1..9], h <- [1..9], i <- [1..9], a/=b, c/=b, a/=c, d/=e, f/=e, d/=f, g/=h, i/=h, g/=i, a+b+c==d+e+f, a+b+c==g+h+i, a+b+c==a+d+g, a+b+c==b+e+h, a+b+c==c+f+i]
